@@ -40,16 +40,16 @@ function App() {
         {characters.map((item, index) => (
             <div key={index} className='col mb-4' id={item.id}>
                 <div className='card' style={{minWidth: "200px"}}>
-                    <img src={item.image} alt=''/>
+                    <img className='p-2' src={item.image} alt=''/>
                     <hr/>
                     <div className='card-body'>
-                        <h5 className='card-title text-uppercase' id={item.name + item.id}>
+                        <h5 className='card-title text-uppercase m-1' id={item.name + item.id}>
                             {item.name}
                         </h5>
-                        <button type='button' className='btn btn-primary' onClick={() => {changeText(item)}}>
+                        <button type='button' className='btn btn-primary m-1' onClick={() => {changeText(item)}}>
                           Update  
                         </button>
-                        <button type='button' className='btn btn-danger' onClick={() => {deleteItem(item)}}>
+                        <button type='button' className='btn btn-danger m-1' onClick={() => {deleteItem(item)}}>
                           Delete  
                         </button>
                     </div>
