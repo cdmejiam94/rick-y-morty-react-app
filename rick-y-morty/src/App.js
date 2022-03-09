@@ -20,7 +20,7 @@ function App() {
   }
 
   const deleteItem = (item) => {
-    document.getElementById(item.id).innerHTML = ""
+    document.getElementById(item.id).remove()
   }
 
   useEffect(() => {
